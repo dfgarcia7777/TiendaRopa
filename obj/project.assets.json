@@ -2064,11 +2064,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\xampp\\htdocs\\TiendaRopa\\TiendaRopa.csproj",
+      "projectUniqueName": "C:\\xampp\\htdocs\\CursoDesarrolloMultiplataformaSPAs\\ANGULAR_I\\ejemplo1-Presentacion\\TiendaRopa\\TiendaRopa.csproj",
       "projectName": "TiendaRopa",
-      "projectPath": "C:\\xampp\\htdocs\\TiendaRopa\\TiendaRopa.csproj",
+      "projectPath": "C:\\xampp\\htdocs\\CursoDesarrolloMultiplataformaSPAs\\ANGULAR_I\\ejemplo1-Presentacion\\TiendaRopa\\TiendaRopa.csproj",
       "packagesPath": "C:\\Users\\Danias\\.nuget\\packages\\",
-      "outputPath": "C:\\xampp\\htdocs\\TiendaRopa\\obj\\",
+      "outputPath": "C:\\xampp\\htdocs\\CursoDesarrolloMultiplataformaSPAs\\ANGULAR_I\\ejemplo1-Presentacion\\TiendaRopa\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Danias\\AppData\\Roaming\\NuGet\\NuGet.Config"

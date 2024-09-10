@@ -13,39 +13,39 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = browser
 build_property.RootNamespace = TiendaRopa
 build_property.RootNamespace = TiendaRopa
-build_property.ProjectDir = C:\xampp\htdocs\TiendaRopa\
+build_property.ProjectDir = C:\xampp\htdocs\CursoDesarrolloMultiplataformaSPAs\ANGULAR_I\ejemplo1-Presentacion\TiendaRopa\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = false
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\xampp\htdocs\TiendaRopa
+build_property.MSBuildProjectDirectory = C:\xampp\htdocs\CursoDesarrolloMultiplataformaSPAs\ANGULAR_I\ejemplo1-Presentacion\TiendaRopa
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/xampp/htdocs/TiendaRopa/App.razor]
+[C:/xampp/htdocs/CursoDesarrolloMultiplataformaSPAs/ANGULAR_I/ejemplo1-Presentacion/TiendaRopa/App.razor]
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/xampp/htdocs/TiendaRopa/Pages/Counter.razor]
+[C:/xampp/htdocs/CursoDesarrolloMultiplataformaSPAs/ANGULAR_I/ejemplo1-Presentacion/TiendaRopa/Pages/Counter.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291bnRlci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/xampp/htdocs/TiendaRopa/Pages/Home.razor]
+[C:/xampp/htdocs/CursoDesarrolloMultiplataformaSPAs/ANGULAR_I/ejemplo1-Presentacion/TiendaRopa/Pages/Home.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9tZS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/xampp/htdocs/TiendaRopa/Pages/Weather.razor]
+[C:/xampp/htdocs/CursoDesarrolloMultiplataformaSPAs/ANGULAR_I/ejemplo1-Presentacion/TiendaRopa/Pages/Weather.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcV2VhdGhlci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/xampp/htdocs/TiendaRopa/_Imports.razor]
+[C:/xampp/htdocs/CursoDesarrolloMultiplataformaSPAs/ANGULAR_I/ejemplo1-Presentacion/TiendaRopa/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/xampp/htdocs/TiendaRopa/Layout/MainLayout.razor]
+[C:/xampp/htdocs/CursoDesarrolloMultiplataformaSPAs/ANGULAR_I/ejemplo1-Presentacion/TiendaRopa/Layout/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = TGF5b3V0XE1haW5MYXlvdXQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-9r8i1o7tdg
 
-[C:/xampp/htdocs/TiendaRopa/Layout/NavMenu.razor]
-build_metadata.AdditionalFiles.TargetPath = TGF5b3V0XE5hdk1lbnUucmF6b3I=
-build_metadata.AdditionalFiles.CssScope = b-04yysvqjsq
+[C:/xampp/htdocs/CursoDesarrolloMultiplataformaSPAs/ANGULAR_I/ejemplo1-Presentacion/TiendaRopa/Layout/NavMenu/NavMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = TGF5b3V0XE5hdk1lbnVcTmF2TWVudS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-we8f86x4qh
