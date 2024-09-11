@@ -1,7 +1,6 @@
 /* /Layout/MainLayout.razor.rz.scp.css */
 /* Estilo para la barra superior */
-.top-navbar[b-9r8i1o7tdg] {
-    background-color: #343a40;
+.top-navbar[b-9r8i1o7tdg] {  
     padding: 0.5rem 1rem;
     position: fixed;
     top: 0;
@@ -12,7 +11,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 5px rgba(228, 224, 9, 0.867);
 }
 
 .navbar-left[b-9r8i1o7tdg] {
@@ -27,7 +26,7 @@
     padding: 0 10px;
 }
 
-.menu-icon:hover+.sidebar[b-9r8i1o7tdg] {
+.menu-icon:hover.sidebar[b-9r8i1o7tdg] {
     display: block;
     /* Despliega el menú lateral cuando se pasa el mouse */
 }
@@ -95,6 +94,8 @@
 
 .sidebar nav a:hover[b-9r8i1o7tdg] {
     background-color: #495057;
+    background: linear-gradient(135deg, #FF6F00 0%, #FFB74D 100%);
+        /* Naranja Vivo a Naranja Claro */
 }
 
 /* Asegura que el contenido no quede oculto detrás de la barra superior fija */
@@ -133,12 +134,13 @@ main[b-9r8i1o7tdg] {
     height: 100vh;
     overflow: hidden;
 }
-
+/*Color de Menu principal*/
 .top-navbar[b-9r8i1o7tdg] {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #343a40;
+    background-color: #FF6F00;
+    
     color: #ffffff;
     padding: 10px;
     position: fixed;
@@ -193,13 +195,10 @@ main[b-9r8i1o7tdg] {
     /* Color al pasar el ratón */
 }
 /* /Layout/NavMenu/NavMenu.razor.rz.scp.css */
-.navbar-toggler[b-we8f86x4qh] {
-    background-color: rgba(255, 255, 255, 0.1);
-}
 
+/*Caracteristicas del Menu Desplegable de la Iquierda*/
 .top-row[b-we8f86x4qh] {
     height: 3.5rem;
-    background-color: rgba(0,0,0,0.4);
 }
 
 .navbar-brand[b-we8f86x4qh] {
@@ -251,12 +250,12 @@ main[b-9r8i1o7tdg] {
     }
 
 .nav-item[b-we8f86x4qh]  a.active {
-    background-color: rgba(255,255,255,0.37);
     color: white;
 }
 
 .nav-item[b-we8f86x4qh]  a:hover {
-    background-color: rgba(255,255,255,0.1);
+    background-color: rgba(241, 122, 10, 0.909);
+    background: linear-gradient(135deg, #FF6F00 0%, #FFB74D 100%);
     color: white;
 }
 

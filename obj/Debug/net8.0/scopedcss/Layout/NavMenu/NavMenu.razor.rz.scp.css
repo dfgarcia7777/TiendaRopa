@@ -1,10 +1,7 @@
-.navbar-toggler[b-we8f86x4qh] {
-    background-color: rgba(255, 255, 255, 0.1);
-}
 
+/*Caracteristicas del Menu Desplegable de la Iquierda*/
 .top-row[b-we8f86x4qh] {
     height: 3.5rem;
-    background-color: rgba(0,0,0,0.4);
 }
 
 .navbar-brand[b-we8f86x4qh] {
@@ -56,12 +53,12 @@
     }
 
 .nav-item[b-we8f86x4qh]  a.active {
-    background-color: rgba(255,255,255,0.37);
     color: white;
 }
 
 .nav-item[b-we8f86x4qh]  a:hover {
-    background-color: rgba(255,255,255,0.1);
+    background-color: rgba(241, 122, 10, 0.909);
+    background: linear-gradient(135deg, #FF6F00 0%, #FFB74D 100%);
     color: white;
 }
 

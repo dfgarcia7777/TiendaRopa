@@ -12,7 +12,7 @@
 
             <!-- Nombre de la tienda con enlace al main -->
             <div class="store-name">
-                <a href="/">MiTienda</a>
+                <a href="/">RoMpieNdO loS GusTOs</a>
             </div>
         </div>
 
@@ -48,7 +48,7 @@
 
 
 @code {
-    [Inject] IJSRuntime JS { get; set; }
+    [Inject] public IJSRuntime JS { get; set; } = null!; // Inicializado como requerido
 
     private async Task ToggleMenu()
     {

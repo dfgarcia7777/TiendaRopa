@@ -1,6 +1,5 @@
 /* Estilo para la barra superior */
-.top-navbar {
-    background-color: #343a40;
+.top-navbar {  
     padding: 0.5rem 1rem;
     position: fixed;
     top: 0;
@@ -11,7 +10,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 5px rgba(228, 224, 9, 0.867);
 }
 
 .navbar-left {
@@ -26,7 +25,7 @@
     padding: 0 10px;
 }
 
-.menu-icon:hover+.sidebar {
+.menu-icon:hover.sidebar {
     display: block;
     /* Despliega el menú lateral cuando se pasa el mouse */
 }
@@ -94,6 +93,8 @@
 
 .sidebar nav a:hover {
     background-color: #495057;
+    background: linear-gradient(135deg, #FF6F00 0%, #FFB74D 100%);
+        /* Naranja Vivo a Naranja Claro */
 }
 
 /* Asegura que el contenido no quede oculto detrás de la barra superior fija */
@@ -132,12 +133,13 @@ main {
     height: 100vh;
     overflow: hidden;
 }
-
+/*Color de Menu principal*/
 .top-navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #343a40;
+    background-color: #FF6F00;
+    
     color: #ffffff;
     padding: 10px;
     position: fixed;
