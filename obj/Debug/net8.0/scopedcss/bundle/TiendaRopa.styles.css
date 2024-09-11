@@ -1,80 +1,177 @@
 /* /Layout/MainLayout.razor.rz.scp.css */
-.page[b-9r8i1o7tdg] {
-    position: relative;
+/* Estilo para la barra superior */
+.top-navbar[b-9r8i1o7tdg] {
+    background-color: #343a40;
+    padding: 0.5rem 1rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    z-index: 1000;
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-main[b-9r8i1o7tdg] {
-    flex: 1;
-}
-
-.sidebar[b-9r8i1o7tdg] {
-    background-image: linear-gradient(180deg, rgb(5, 39, 103) 0%, #3a0647 70%);
-}
-
-.top-row[b-9r8i1o7tdg] {
-    background-color: #f7f7f7;
-    border-bottom: 1px solid #d6d5d5;
-    justify-content: flex-end;
-    height: 3.5rem;
+.navbar-left[b-9r8i1o7tdg] {
     display: flex;
     align-items: center;
 }
 
-    .top-row[b-9r8i1o7tdg]  a, .top-row[b-9r8i1o7tdg]  .btn-link {
-        white-space: nowrap;
-        margin-left: 1.5rem;
-        text-decoration: none;
-    }
+.menu-icon[b-9r8i1o7tdg] {
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+    padding: 0 10px;
+}
 
-    .top-row[b-9r8i1o7tdg]  a:hover, .top-row[b-9r8i1o7tdg]  .btn-link:hover {
-        text-decoration: underline;
-    }
+.menu-icon:hover+.sidebar[b-9r8i1o7tdg] {
+    display: block;
+    /* Despliega el menú lateral cuando se pasa el mouse */
+}
 
-    .top-row[b-9r8i1o7tdg]  a:first-child {
-        overflow: hidden;
-        text-overflow: ellipsis;
-    }
+/* Estilo para el nombre de la tienda */
+.store-name a[b-9r8i1o7tdg] {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding-left: 10px;
+}
 
-@media (max-width: 640.98px) {
-    .top-row[b-9r8i1o7tdg] {
-        justify-content: space-between;
-    }
+.navbar-center[b-9r8i1o7tdg] {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
 
-    .top-row[b-9r8i1o7tdg]  a, .top-row[b-9r8i1o7tdg]  .btn-link {
-        margin-left: 0;
+.search-bar[b-9r8i1o7tdg] {
+    width: 100%;
+    max-width: 300px;
+    padding: 0.3rem;
+    border-radius: 4px;
+    border: none;
+}
+
+/* Estilo para los iconos a la derecha */
+.navbar-right[b-9r8i1o7tdg] {
+    display: flex;
+    gap: 10px;
+}
+
+.icon[b-9r8i1o7tdg] {
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 0 10px;
+}
+
+.icon:hover[b-9r8i1o7tdg] {
+    color: #ddd;
+}
+
+/* Menú lateral oculto por defecto */
+.sidebar[b-9r8i1o7tdg] {
+    position: fixed;
+    left: 0;
+    top: 50px;
+    /* Debajo de la barra de navegación */
+    width: 250px;
+    height: 100%;
+    background-color: #343a40;
+    padding-top: 10px;
+    display: none;
+    /* Oculto inicialmente */
+}
+
+.sidebar nav a[b-9r8i1o7tdg] {
+    color: white;
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.sidebar nav a:hover[b-9r8i1o7tdg] {
+    background-color: #495057;
+}
+
+/* Asegura que el contenido no quede oculto detrás de la barra superior fija */
+main[b-9r8i1o7tdg] {
+    padding-top: 60px;
+    flex: 1;
+}
+
+/* Responsiveness - Media Queries */
+
+/* Pantallas pequeñas (móviles) */
+@media (max-width: 768px) {
+    .navbar-center[b-9r8i1o7tdg] {
+        display: none;
+        /* Ocultar el buscador en pantallas pequeñas */
     }
 }
 
-@media (min-width: 641px) {
-    .page[b-9r8i1o7tdg] {
-        flex-direction: row;
+/* Pantallas medianas (tabletas) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .search-bar[b-9r8i1o7tdg] {
+        width: 200px;
+        /* Ajustar el tamaño del buscador en tabletas */
     }
+}
 
-    .sidebar[b-9r8i1o7tdg] {
-        width: 250px;
-        height: 100vh;
-        position: sticky;
-        top: 0;
+/* Pantallas grandes (desktop) */
+@media (min-width: 1025px) {
+    .search-bar[b-9r8i1o7tdg] {
+        width: 300px;
     }
+}
+.page[b-9r8i1o7tdg] {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow: hidden;
+}
 
-    .top-row[b-9r8i1o7tdg] {
-        position: sticky;
-        top: 0;
-        z-index: 1;
-    }
+.top-navbar[b-9r8i1o7tdg] {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #343a40;
+    color: #ffffff;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
 
-    .top-row.auth[b-9r8i1o7tdg]  a:first-child {
-        flex: 1;
-        text-align: right;
-        width: 0;
-    }
+.sidebar[b-9r8i1o7tdg] {
+    position: fixed;
+    left: 0;
+    top: 50px;
+    width: 250px;
+    height: calc(100% - 50px);
+    background-color: #343a40;
+    padding-top: 10px;
+    display: none;
+    transition: transform 0.3s ease;
+    transform: translateX(-100%);
+}
 
-    .top-row[b-9r8i1o7tdg], article[b-9r8i1o7tdg] {
-        padding-left: 2rem !important;
-        padding-right: 1.5rem !important;
-    }
+.sidebar.visible[b-9r8i1o7tdg] {
+    display: block;
+    transform: translateX(0);
+}
+
+main[b-9r8i1o7tdg] {
+    margin-left: 0;
+    transition: margin-left 0.3s ease;
+}
+
+.sidebar.visible~main[b-9r8i1o7tdg] {
+    margin-left: 250px;
 }
 /* /Layout/NavMenu/NavMenu.razor.rz.scp.css */
 .navbar-toggler[b-we8f86x4qh] {

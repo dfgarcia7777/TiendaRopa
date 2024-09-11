@@ -1,17 +1,60 @@
 ﻿@using TiendaRopa.NavMenu  <!-- Aquí se utiliza el componente TiendaRopa.NavMenu -->
 @inherits LayoutComponentBase
-<div class="page">
-    <div class="sidebar">
-        <NavMenu /> <!-- Aquí se utiliza el componente NavMenu -->
-    </div>
 
-    <main>
-        <div class="top-row px-4">
-            <a href="https://learn.microsoft.com/aspnet/core/" target="_blank">About</a>
+<div class="page">
+    <!-- Barra de navegación superior -->
+    <header class="top-navbar">
+        <div class="navbar-left">
+            <!-- Icono del menú desplegable -->
+            <div class="menu-icon" @onclick="ToggleMenu">
+                <span>&#9776;</span> <!-- Icono de menú "hamburguesa" -->
+            </div>
+
+            <!-- Nombre de la tienda con enlace al main -->
+            <div class="store-name">
+                <a href="/">MiTienda</a>
+            </div>
         </div>
 
+        <!-- Buscador en el centro -->
+        <div class="navbar-center">
+            <input type="text" placeholder="Buscar productos..." class="search-bar" />
+        </div>
+
+        <!-- Iconos de usuario y cesta a la derecha -->
+        <div class="navbar-right">
+            <div class="icon" title="Iniciar sesión">
+                <i class="fas fa-user"></i> <!-- Icono de usuario -->
+            </div>
+            <div class="icon" title="Cesta de compra">
+                <i class="fas fa-shopping-cart"></i> <!-- Icono de cesta -->
+            </div>
+        </div>
+    </header>
+
+    <!-- Menú lateral -->
+    <div id="sidebar" class="sidebar" @onmouseleave="HideMenu">
+        <NavMenu />
+    </div>
+
+    <!-- Contenido principal -->
+    <main>
         <article class="content px-4">
-            @Body
+            @Body <!-- Cuerpo de la página -->
         </article>
     </main>
 </div>
+
+@code {
+    [Inject] IJSRuntime JS { get; set; }
+
+    private async Task ToggleMenu()
+    {
+        await JS.InvokeVoidAsync("toggleSidebar");
+    }
+
+    private async Task HideMenu()
+    {
+        await JS.InvokeVoidAsync("hideSidebar");
+    }
+}
