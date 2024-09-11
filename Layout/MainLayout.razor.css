@@ -172,3 +172,22 @@ main {
 .sidebar.visible~main {
     margin-left: 250px;
 }
+/* Estilos para los iconos en la barra de navegación */
+.navbar-right {
+    margin-right: 20px;
+    /* Espacio adicional a la derecha */
+}
+
+.navbar-right .icon {
+    margin-left: 20px;
+    /* Espaciado entre íconos */
+    font-size: 1.5rem;
+    /* Tamaño de los íconos */
+    cursor: pointer;
+    /* Muestra que el icono es clicable */
+}
+
+.navbar-right .icon:hover {
+    color: #0071c1;
+    /* Color al pasar el ratón */
+}

@@ -172,3 +172,22 @@ main[b-9r8i1o7tdg] {
 .sidebar.visible~main[b-9r8i1o7tdg] {
     margin-left: 250px;
 }
+/* Estilos para los iconos en la barra de navegación */
+.navbar-right[b-9r8i1o7tdg] {
+    margin-right: 20px;
+    /* Espacio adicional a la derecha */
+}
+
+.navbar-right .icon[b-9r8i1o7tdg] {
+    margin-left: 20px;
+    /* Espaciado entre íconos */
+    font-size: 1.5rem;
+    /* Tamaño de los íconos */
+    cursor: pointer;
+    /* Muestra que el icono es clicable */
+}
+
+.navbar-right .icon:hover[b-9r8i1o7tdg] {
+    color: #0071c1;
+    /* Color al pasar el ratón */
+}
