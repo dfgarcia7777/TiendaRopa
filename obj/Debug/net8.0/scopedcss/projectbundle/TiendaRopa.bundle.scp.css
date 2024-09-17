@@ -72,6 +72,9 @@
 }
 
 /* Menú lateral oculto por defecto */
+#sidebar[b-9r8i1o7tdg]{
+    
+}
 .sidebar[b-9r8i1o7tdg] {
     position: fixed;
     left: 0;
@@ -79,7 +82,7 @@
     /* Debajo de la barra de navegación */
     width: 250px;
     height: 100%;
-    background-color: #343a40;
+    background: linear-gradient(135deg, #FF6F00 0%, #FFB74D 100%);
     padding-top: 10px;
     display: none;
     /* Oculto inicialmente */
@@ -197,24 +200,17 @@ main[b-9r8i1o7tdg] {
 /* /Layout/NavMenu/NavMenu.razor.rz.scp.css */
 
 /*Caracteristicas del Menu Desplegable de la Iquierda*/
-.top-row[b-we8f86x4qh] {
-    height: 3.5rem;
-}
-
-.navbar-brand[b-we8f86x4qh] {
-    font-size: 1.1rem;
-}
-
+/*Caracteristicas bi importantes para que se muestre de esa forma el desplegable*/
 .bi[b-we8f86x4qh] {
-    display: inline-block;
-    position: relative;
-    width: 1.25rem;
-    height: 1.25rem;
-    margin-right: 0.75rem;
-    top: -1px;
-    background-size: cover;
+    display: inline-block; /* Hace que el elemento se comporte como un bloque en línea */
+    position: relative; /* Posiciona el elemento de manera relativa a su posición original */
+    width: 1.25rem; /* Establece el ancho del ícono */
+    height: 1.25rem; /* Establece la altura del ícono */
+    margin-right: 0.75rem; /* Añade un margen a la derecha */
+    top: -1px; /* Mueve el ícono hacia arriba por 1px */
+    background-size: cover; /* Asegura que la imagen de fondo cubra todo el contenedor */
 }
-
+/*Los iconos de cada opcion del desplegable*/
 .bi-house-door-fill-nav-menu[b-we8f86x4qh] {
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='white' class='bi bi-house-door-fill' viewBox='0 0 16 16'%3E%3Cpath d='M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5Z'/%3E%3C/svg%3E");
 }
@@ -228,50 +224,44 @@ main[b-9r8i1o7tdg] {
 }
 
 .nav-item[b-we8f86x4qh] {
-    font-size: 0.9rem;
-    padding-bottom: 0.5rem;
+    font-size: 0.9rem; /* Tamaño de la fuente */
+    padding-bottom: 0.5rem; /* Espacio inferior de cada ítem */
 }
 
-    .nav-item:first-of-type[b-we8f86x4qh] {
+    .nav-item:first-of-type[b-we8f86x4qh] {/*indica que el primer item tiene ese espacio*/
         padding-top: 1rem;
     }
 
-    .nav-item:last-of-type[b-we8f86x4qh] {
+    .nav-item:last-of-type[b-we8f86x4qh] {/*indica que el ultimo item tiene ese espacio*/
         padding-bottom: 1rem;
     }
 
-    .nav-item[b-we8f86x4qh]  a {
-        color: #d7d7d7;
-        border-radius: 4px;
-        height: 3rem;
-        display: flex;
-        align-items: center;
-        line-height: 3rem;
+    .nav-item[b-we8f86x4qh]  a {/*descripcion de los iconos*/    
+        color: white !important; /* Forzamos el color blanco */
+        border-radius: 4px; /* Bordes redondeados */
+        height: 3rem; /* Altura fija de cada ítem */
+        display: flex; /* Flexbox para alinear el contenido */
+        align-items: center; /* Alineación vertical centrada */
+        line-height: 3rem; /* Controla la altura de línea para alinear verticalmente el texto */
     }
 
-.nav-item[b-we8f86x4qh]  a.active {
-    color: white;
-}
 
 .nav-item[b-we8f86x4qh]  a:hover {
-    background-color: rgba(241, 122, 10, 0.909);
-    background: linear-gradient(135deg, #FF6F00 0%, #FFB74D 100%);
-    color: white;
+    background: linear-gradient(135deg, #ff0000 0%, #FFB74D 100%);
+    color: white !important; /* Asegura que el texto siga siendo blanco en hover */
 }
 
 @media (min-width: 641px) {
     .navbar-toggler[b-we8f86x4qh] {
-        display: none;
+        display: none;/* Oculta el botón del menú en pantallas grandes */
     }
 
     .collapse[b-we8f86x4qh] {
-        /* Never collapse the sidebar for wide screens */
-        display: block;
+        display: block;/* Asegura que el menú siempre esté desplegado en pantallas grandes */
     }
     
     .nav-scrollable[b-we8f86x4qh] {
-        /* Allow sidebar to scroll for tall menus */
-        height: calc(100vh - 3.5rem);
-        overflow-y: auto;
+        height: calc(100vh - 3.5rem);/* Hace que el menú ocupe el 100% de la altura de la pantalla, menos 3.5rem */
+        overflow-y: auto;/* Permite desplazamiento si el menú es muy alto */
     }
 }

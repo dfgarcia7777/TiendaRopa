@@ -71,6 +71,9 @@
 }
 
 /* Menú lateral oculto por defecto */
+#sidebar{
+    
+}
 .sidebar {
     position: fixed;
     left: 0;
@@ -78,7 +81,7 @@
     /* Debajo de la barra de navegación */
     width: 250px;
     height: 100%;
-    background-color: #343a40;
+    background: linear-gradient(135deg, #FF6F00 0%, #FFB74D 100%);
     padding-top: 10px;
     display: none;
     /* Oculto inicialmente */
