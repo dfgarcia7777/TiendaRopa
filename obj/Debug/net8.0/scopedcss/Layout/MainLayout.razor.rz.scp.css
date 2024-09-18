@@ -29,7 +29,21 @@
 .menu-icon:hover[b-9r8i1o7tdg] {
     background: linear-gradient(135deg, #FFB74D 0%, #ff0000 100%);
         /* Invertir el gradiente en hover */
-        -webkit-background-clip: text;
+        /* Prefijos de navegador para compatibilidad */
+            -webkit-background-clip: text;
+            /* Para navegadores basados en WebKit (Chrome, Safari) */
+            -moz-background-clip: text;
+            /* Para navegadores Firefox */
+            -o-background-clip: text;
+            /* Para navegadores Opera (versión antigua) */
+            background-clip: text;
+            /* Propiedad estándar sin prefijo */
+            -webkit-text-fill-color: transparent;
+            /* Hace que el texto sea transparente para mostrar el gradiente */
+            -moz-text-fill-color: transparent;
+            /* Firefox no necesita background-clip, pero se puede incluir */
+            transition: background 0.3s ease;
+            /* Transición suave */
         -webkit-text-fill-color: transparent;
 }
 /*El texto "Rompiendo los gustos"*/
@@ -44,7 +58,21 @@
 .store-name a:hover[b-9r8i1o7tdg] {
     background: linear-gradient(135deg, #FFB74D 0%, #ff0000 100%);
         /* Invertir el gradiente en hover */
-        -webkit-background-clip: text;
+        /* Prefijos de navegador para compatibilidad */
+            -webkit-background-clip: text;
+            /* Para navegadores basados en WebKit (Chrome, Safari) */
+            -moz-background-clip: text;
+            /* Para navegadores Firefox */
+            -o-background-clip: text;
+            /* Para navegadores Opera (versión antigua) */
+            background-clip: text;
+            /* Propiedad estándar sin prefijo */
+            -webkit-text-fill-color: transparent;
+            /* Hace que el texto sea transparente para mostrar el gradiente */
+            -moz-text-fill-color: transparent;
+            /* Firefox no necesita background-clip, pero se puede incluir */
+            transition: background 0.3s ease;
+            /* Transición suave */
         -webkit-text-fill-color: transparent;
 }
 /*contenedor del buscador*/
@@ -78,7 +106,21 @@
 .icon:hover[b-9r8i1o7tdg] {
     background: linear-gradient(135deg, #FFB74D 0%, #ff0000 100%);
         /* Invertir el gradiente en hover */
-        -webkit-background-clip: text;
+        /* Prefijos de navegador para compatibilidad */
+            -webkit-background-clip: text;
+            /* Para navegadores basados en WebKit (Chrome, Safari) */
+            -moz-background-clip: text;
+            /* Para navegadores Firefox */
+            -o-background-clip: text;
+            /* Para navegadores Opera (versión antigua) */
+            background-clip: text;
+            /* Propiedad estándar sin prefijo */
+            -webkit-text-fill-color: transparent;
+            /* Hace que el texto sea transparente para mostrar el gradiente */
+            -moz-text-fill-color: transparent;
+            /* Firefox no necesita background-clip, pero se puede incluir */
+            transition: background 0.3s ease;
+            /* Transición suave */
         -webkit-text-fill-color: transparent;
 }
 /*Caracteristicas del Menu Desplegable de la Iquierda*/
@@ -97,7 +139,7 @@
     top: 50px;/* Debajo de la barra de navegación */
     width: 250px;
     height: 100%;
-    background-color: #cf1515;
+    background: linear-gradient(135deg, #FF6F00 0%, #FFB74D 100%);
     padding-top: 10px;
     transition: all 0.4s ease;
 }
