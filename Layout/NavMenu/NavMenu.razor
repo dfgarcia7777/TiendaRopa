@@ -27,8 +27,10 @@
 @code {
     private bool collapseNavMenu = true;
 
-    private string? NavMenuCssClass => collapseNavMenu ? "collapse" : null;
+    // La clase CSS se aplica según el estado del menú
+    private string? NavMenuCssClass => collapseNavMenu ? "collapse" : "visible";
 
+    // Alterna entre ocultar y mostrar el menú
     private void ToggleNavMenu()
     {
         collapseNavMenu = !collapseNavMenu;

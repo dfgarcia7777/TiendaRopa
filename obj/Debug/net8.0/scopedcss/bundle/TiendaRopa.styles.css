@@ -1,7 +1,8 @@
 /* /Layout/MainLayout.razor.rz.scp.css */
-/* Estilo para la barra superior */
+/* Estilo para la barra superior completa */
 .top-navbar[b-9r8i1o7tdg] {  
-    padding: 0.5rem 1rem;
+    padding-left: 30px;
+    padding-right: 30px;
     position: fixed;
     top: 0;
     left: 0;
@@ -11,41 +12,49 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 0 2px 5px rgba(228, 224, 9, 0.867);
+    background: linear-gradient(135deg, #FF6F00 0%, #FFB74D 100%);
+    color: white;
 }
-
+/*La contenedor del 1ºicono y texto"Rompiendo los gustos"*/
 .navbar-left[b-9r8i1o7tdg] {
     display: flex;
     align-items: center;
 }
-
+/*El 1º icono que se despliega*/
 .menu-icon[b-9r8i1o7tdg] {
     font-size: 24px;
-    color: white;
     cursor: pointer;
     padding: 0 10px;
 }
-
-.menu-icon:hover.sidebar[b-9r8i1o7tdg] {
-    display: block;
-    /* Despliega el menú lateral cuando se pasa el mouse */
+/*Cambia de color al pasar por encima*/
+.menu-icon:hover[b-9r8i1o7tdg] {
+    background: linear-gradient(135deg, #FFB74D 0%, #ff0000 100%);
+        /* Invertir el gradiente en hover */
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
 }
-
-/* Estilo para el nombre de la tienda */
+/*El texto "Rompiendo los gustos"*/
 .store-name a[b-9r8i1o7tdg] {
     color: white;
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 24px;
     font-weight: bold;
     padding-left: 10px;
 }
-
+/*Cambia de color al pasar por encima*/
+.store-name a:hover[b-9r8i1o7tdg] {
+    background: linear-gradient(135deg, #FFB74D 0%, #ff0000 100%);
+        /* Invertir el gradiente en hover */
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+}
+/*contenedor del buscador*/
 .navbar-center[b-9r8i1o7tdg] {
     flex-grow: 1;
     display: flex;
     justify-content: center;
 }
-
+/*Buscador*/
 .search-bar[b-9r8i1o7tdg] {
     width: 100%;
     max-width: 300px;
@@ -53,75 +62,60 @@
     border-radius: 4px;
     border: none;
 }
-
-/* Estilo para los iconos a la derecha */
+/* Contenedor de los iconos de la derecha */
 .navbar-right[b-9r8i1o7tdg] {
     display: flex;
     gap: 10px;
+    padding-left: 100px;
 }
-
+/*Iconos de la derecha*/
 .icon[b-9r8i1o7tdg] {
     color: white;
     font-size: 20px;
     cursor: pointer;
     padding: 0 10px;
 }
-
+/*Cambia de color al pasar por encima*/
 .icon:hover[b-9r8i1o7tdg] {
-    color: #ddd;
+    background: linear-gradient(135deg, #FFB74D 0%, #ff0000 100%);
+        /* Invertir el gradiente en hover */
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
 }
-
-/* Menú lateral oculto por defecto */
-#sidebar[b-9r8i1o7tdg]{
-    
+/*Caracteristicas del Menu Desplegable de la Iquierda*/
+/* Menú oculto */
+.collapse[b-9r8i1o7tdg] {
+    display: none;
 }
+/* Menú visible */
+.visible[b-9r8i1o7tdg] {
+    display: block;
+}
+/* Sidebar estilo básico */
 .sidebar[b-9r8i1o7tdg] {
     position: fixed;
     left: 0;
-    top: 50px;
-    /* Debajo de la barra de navegación */
+    top: 50px;/* Debajo de la barra de navegación */
     width: 250px;
     height: 100%;
-    background: linear-gradient(135deg, #FF6F00 0%, #FFB74D 100%);
+    background-color: #cf1515;
     padding-top: 10px;
-    display: none;
-    /* Oculto inicialmente */
+    transition: all 0.4s ease;
 }
 
-.sidebar nav a[b-9r8i1o7tdg] {
-    color: white;
-    display: block;
-    padding: 10px;
-    text-decoration: none;
-}
 
-.sidebar nav a:hover[b-9r8i1o7tdg] {
-    background-color: #495057;
-    background: linear-gradient(135deg, #FF6F00 0%, #FFB74D 100%);
-        /* Naranja Vivo a Naranja Claro */
-}
-
-/* Asegura que el contenido no quede oculto detrás de la barra superior fija */
-main[b-9r8i1o7tdg] {
-    padding-top: 60px;
-    flex: 1;
-}
-
-/* Responsiveness - Media Queries */
-
+/*----------------------------- Media Queries------------------------------------------*/
 /* Pantallas pequeñas (móviles) */
 @media (max-width: 768px) {
     .navbar-center[b-9r8i1o7tdg] {
-        display: none;
-        /* Ocultar el buscador en pantallas pequeñas */
+        display: none;/* Ocultar el buscador en pantallas pequeñas */
     }
 }
 
 /* Pantallas medianas (tabletas) */
 @media (min-width: 769px) and (max-width: 1024px) {
     .search-bar[b-9r8i1o7tdg] {
-        width: 200px;
-        /* Ajustar el tamaño del buscador en tabletas */
+        width: 200px;/* Ajustar el tamaño del buscador en tabletas */
     }
 }
 
@@ -131,75 +125,29 @@ main[b-9r8i1o7tdg] {
         width: 300px;
     }
 }
-.page[b-9r8i1o7tdg] {
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-    overflow: hidden;
+@media (max-width: 768px) {
+    .menu-icon[b-9r8i1o7tdg] {
+        font-size: 20px;/* Ajustar tamaño de iconos para pantallas pequeñas */
+    }
+    .navbar-right .icon[b-9r8i1o7tdg] {
+        font-size: 18px;/* Ajustar tamaño de los iconos a la derecha */
+    }
+    .sidebar[b-9r8i1o7tdg] {
+        width: 200px;/* Reducir tamaño del sidebar en pantallas pequeñas */
+    }
 }
-/*Color de Menu principal*/
-.top-navbar[b-9r8i1o7tdg] {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #FF6F00;
-    
-    color: #ffffff;
-    padding: 10px;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-}
-
-.sidebar[b-9r8i1o7tdg] {
-    position: fixed;
-    left: 0;
-    top: 50px;
-    width: 250px;
-    height: calc(100% - 50px);
-    background-color: #343a40;
-    padding-top: 10px;
-    display: none;
-    transition: transform 0.3s ease;
-    transform: translateX(-100%);
-}
-
-.sidebar.visible[b-9r8i1o7tdg] {
-    display: block;
-    transform: translateX(0);
-}
-
-main[b-9r8i1o7tdg] {
-    margin-left: 0;
-    transition: margin-left 0.3s ease;
-}
-
-.sidebar.visible~main[b-9r8i1o7tdg] {
-    margin-left: 250px;
-}
-/* Estilos para los iconos en la barra de navegación */
-.navbar-right[b-9r8i1o7tdg] {
-    margin-right: 20px;
-    /* Espacio adicional a la derecha */
-}
-
-.navbar-right .icon[b-9r8i1o7tdg] {
-    margin-left: 20px;
-    /* Espaciado entre íconos */
-    font-size: 1.5rem;
-    /* Tamaño de los íconos */
-    cursor: pointer;
-    /* Muestra que el icono es clicable */
-}
-
-.navbar-right .icon:hover[b-9r8i1o7tdg] {
-    color: #0071c1;
-    /* Color al pasar el ratón */
+@media (min-width: 1025px) {
+    .menu-icon[b-9r8i1o7tdg] {
+        font-size: 24px;/* Asegurar que los iconos sean lo suficientemente grandes en escritorio */
+    }
+    .sidebar[b-9r8i1o7tdg] {
+        width: 250px;/* Sidebar más grande en pantallas grandes */
+    }
+    .search-bar[b-9r8i1o7tdg] {
+        max-width: 350px;/* Aumentar un poco el tamaño del buscador */
+    }
 }
 /* /Layout/NavMenu/NavMenu.razor.rz.scp.css */
-
-/*Caracteristicas del Menu Desplegable de la Iquierda*/
 /*Caracteristicas bi importantes para que se muestre de esa forma el desplegable*/
 .bi[b-we8f86x4qh] {
     display: inline-block; /* Hace que el elemento se comporte como un bloque en línea */
