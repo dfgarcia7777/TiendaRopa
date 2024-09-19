@@ -123,26 +123,6 @@
             /* Transición suave */
         -webkit-text-fill-color: transparent;
 }
-/*Caracteristicas del Menu Desplegable de la Iquierda*/
-/* Menú oculto */
-.collapse[b-9r8i1o7tdg] {
-    display: none;
-}
-/* Menú visible */
-.visible[b-9r8i1o7tdg] {
-    display: block;
-}
-/* Sidebar estilo básico */
-.sidebar[b-9r8i1o7tdg] {
-    position: fixed;
-    left: 0;
-    top: 50px;/* Debajo de la barra de navegación */
-    width: 250px;
-    height: 100%;
-    background: linear-gradient(135deg, #FF6F00 0%, #FFB74D 100%);
-    padding-top: 10px;
-    transition: all 0.4s ease;
-}
 
 
 /*----------------------------- Media Queries------------------------------------------*/

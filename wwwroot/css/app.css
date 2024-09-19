@@ -1,42 +1,100 @@
 /* Estilos generales para el contenedor de la página */
 .page {
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
+    display: flex;/* Utiliza flexbox para organizar el contenido de la página en un eje flexible */
+    flex-direction: column;/* Organiza los elementos hijos en una columna (de arriba hacia abajo) */
+    height: 100vh;/* Hace que el contenedor de la página ocupe el 100% de la altura del viewport */
     overflow: auto;/* Permite que aparezca el scroll cuando sea necesario */
 }
-/* Estilos para el menú lateral */
+/* Estilos para el menú lateral izq desplegable*/
 .sidebar {
     position: fixed;
     left: 0;
-    top: 50px;
+    top: 50px;/* Debajo de la barra de navegación */
     width: 250px;
-    height: calc(100% - 50px);
-    background-color: white;
-    background: #c1cfde;
+    height: calc(100% - 50px);/* Ajuste de altura */
+    background: linear-gradient(135deg, #FF6F00 0%, #FFB74D 100%);
     padding-top: 10px;
-    display: none;
-    transition: transform 0.3s ease;
-    transform: translateX(-100%);
+    display: none;/* Oculto por defecto */
+    transition: transform 0.3s ease, all 0.4s ease;/* Transición combinada */
+    transform: translateX(-100%);/* Ocultar fuera de la vista */
 }
-
-/* Cuando el menú está visible */
+/* Menú visible desplegable izq */
 .sidebar.visible {
-    background-color: white;
-    background: #c1cfde;
     display: block;
     transform: translateX(0);
+    /* Mostrar el menú */
+}
+/* Ajuste del contenido principal cuando el menú lateral está visible */
+.sidebar.visible~main {
+    margin-left: 250px;/* Ajustar margen del contenido cuando el sidebar está visible */
+}
+/* Estilos para el colapso del menú */
+.collapse {
+    display: none;/* Oculta el contenido del menú por defecto, usado para colapsar menús en dispositivos móviles o tablets */
 }
 
+/* Menú visible cuando es expandido */
+.visible {
+    display: block;/* Hace que el contenido colapsado sea visible cuando se expande */
+}
 /* Ajuste del contenido principal cuando el menú está visible */
 main {
     margin-left: 0;
     transition: margin-left 0.3s ease;
 }
-
-.sidebar.visible~main {
-    margin-left: 250px;
+/* Estilos para el botón primario */
+.btn-primary {
+    color: #fff;
+    background-color: #c1cfde;
+    border-color: #c0cad3;
 }
+
+/* Estilo para el enfoque de los botones y formularios */
+.btn:focus,
+.btn:active:focus,
+.btn-link.nav-link:focus,
+.form-control:focus,
+.form-check-input:focus {
+    box-shadow: none;
+}
+
+/* Estilo para los mensajes de validación */
+.valid.modified:not([type=checkbox]) {
+    outline: none;
+}
+
+.invalid {
+    outline: none;
+}
+
+.validation-message {
+    color: red;
+}
+
+/* Elimina cualquier borde o outline que pueda estar aplicándose al contenedor */
+.page * {
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+/* Asegúrate de que los encabezados no tengan borde ni outline */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+
+/* Estilo para el código */
+code {
+    color: #c02d76;
+}
+
 
 /* Estilos para el botón primario */
 .btn-primary {

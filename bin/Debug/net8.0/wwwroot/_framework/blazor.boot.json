@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "TiendaRopa",
   "resources": {
-    "hash": "sha256-UJSUBYyIheMvvZ+5sC/79ahzgCc4oFNP7WqqP4QlPmk=",
+    "hash": "sha256-0akkonea1gymzlMFk6GLzgS0CcMWbkjIyAMJqoy+6kg=",
     "jsModuleNative": {
       "dotnet.native.8.0.8.b2dx81jaxs.js": "sha256-juC5sA7gHTLXFEhAKgdM2/RavswpwCtDfjYGsAz2FXg="
     },
@@ -208,10 +208,10 @@
       "mscorlib.wasm": "sha256-Gz8PyW2/fwihe5ul81OwmRUrU71r+KtbyRw6xlOGD+Q=",
       "netstandard.wasm": "sha256-jMTqIQzoDS810lyhZpMO5eEC36EzntXqSVn+2qwkOMQ=",
       "System.Private.CoreLib.wasm": "sha256-NFj5WE5VLP2LptZIRJCUIc1AMk06FmxpsSILfPISwAw=",
-      "TiendaRopa.wasm": "sha256-Z44Yw7kbcSlzslKohyWuhbdWVQe8zYAPlccOTvsXN24="
+      "TiendaRopa.wasm": "sha256-PSFUxyY+lrf2vY8z7U7oZgUW+eYRNpx1hkpbiiLZVxg="
     },
     "pdb": {
-      "TiendaRopa.pdb": "sha256-AQYse0eHc0eEALJQDpNAcRssr0QFcuej8G5gx1wq+Lc="
+      "TiendaRopa.pdb": "sha256-Zbx2WOtE4sF5xaB8/wHY5S3Zq5Jm1VOQsVT7nsRBRJk="
     }
   },
   "cacheBootResources": true,
