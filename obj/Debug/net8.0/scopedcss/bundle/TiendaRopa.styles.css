@@ -126,49 +126,6 @@
 }
 
 
-/*----------------------------- Media Queries------------------------------------------*/
-/* Pantallas pequeñas (móviles) */
-@media (max-width: 768px) {
-    .navbar-center[b-9r8i1o7tdg] {
-        display: none;/* Ocultar el buscador en pantallas pequeñas */
-    }
-}
-
-/* Pantallas medianas (tabletas) */
-@media (min-width: 769px) and (max-width: 1024px) {
-    .search-bar[b-9r8i1o7tdg] {
-        width: 200px;/* Ajustar el tamaño del buscador en tabletas */
-    }
-}
-
-/* Pantallas grandes (desktop) */
-@media (min-width: 1025px) {
-    .search-bar[b-9r8i1o7tdg] {
-        width: 300px;
-    }
-}
-@media (max-width: 768px) {
-    .menu-icon[b-9r8i1o7tdg] {
-        font-size: 20px;/* Ajustar tamaño de iconos para pantallas pequeñas */
-    }
-    .navbar-right .icon[b-9r8i1o7tdg] {
-        font-size: 18px;/* Ajustar tamaño de los iconos a la derecha */
-    }
-    .sidebar[b-9r8i1o7tdg] {
-        width: 200px;/* Reducir tamaño del sidebar en pantallas pequeñas */
-    }
-}
-@media (min-width: 1025px) {
-    .menu-icon[b-9r8i1o7tdg] {
-        font-size: 24px;/* Asegurar que los iconos sean lo suficientemente grandes en escritorio */
-    }
-    .sidebar[b-9r8i1o7tdg] {
-        width: 250px;/* Sidebar más grande en pantallas grandes */
-    }
-    .search-bar[b-9r8i1o7tdg] {
-        max-width: 350px;/* Aumentar un poco el tamaño del buscador */
-    }
-}
 /* /Layout/NavMenu/NavMenu.razor.rz.scp.css */
 /*Caracteristicas bi importantes para que se muestre de esa forma el desplegable*/
 .bi[b-we8f86x4qh] {
