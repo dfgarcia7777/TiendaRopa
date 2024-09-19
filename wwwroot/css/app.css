@@ -5,84 +5,146 @@
     height: 100vh;/* Hace que el contenedor de la página ocupe el 100% de la altura del viewport */
     overflow: auto;/* Permite que aparezca el scroll cuando sea necesario */
 }
-/* Estilos para el menú lateral izquierdo desplegable */
+/* Estilos para el menú lateral izq desplegable*/
 .sidebar {
-    position: fixed;/* Fija el menú lateral en su posición mientras se hace scroll en la página */
-    left: 0;/* Posiciona el menú en el lado izquierdo de la página */
-    top: 50px;/* Lo coloca debajo de una barra de navegación de 50px */
-    width: 250px;/* Establece el ancho del menú lateral */
-    height: calc(100% - 50px);/* Ajusta la altura del menú lateral para llenar la pantalla menos la barra de navegación */
-    background: linear-gradient(135deg, #FF6F00 0%, #FFB74D 100%); /* Aplica un fondo degradado */
-    display: none;/* Oculta el menú lateral por defecto */
-    transition: transform 0.3s ease;/* Agregado para suavizar la animación al mostrar/ocultar */
-    transform: translateX(-100%);/* Oculta el menú fuera de la vista por defecto */
+    position: fixed;
+    left: 0;
+    top: 50px;/* Debajo de la barra de navegación */
+    width: 250px;
+    height: calc(100% - 50px);/* Ajuste de altura */
+    background: linear-gradient(135deg, #FF6F00 0%, #FFB74D 100%);
+    padding-top: 10px;
+    display: none;/* Oculto por defecto */
+    transition: transform 0.3s ease, all 0.4s ease;/* Transición combinada */
+    transform: translateX(-100%);/* Ocultar fuera de la vista */
 }
-/* Menú visible desplegable izquierdo */
+/* Menú visible desplegable izq */
 .sidebar.visible {
-    transform: translateX(0);/* Asegura que el menú esté en su posición normal al mostrarse */
+    display: block;
+    transform: translateX(0);
+    /* Mostrar el menú */
 }
 /* Ajuste del contenido principal cuando el menú lateral está visible */
 .sidebar.visible~main {
     margin-left: 250px;/* Ajustar margen del contenido cuando el sidebar está visible */
 }
-/* Transición del margen del contenido principal cuando el menú se oculta o se muestra */
-main {
-    transition: margin-left 0.3s ease;/* Suaviza el cambio de margen cuando el menú lateral aparece o desaparece */
+/* Estilos para el colapso del menú */
+.collapse {
+    display: none;/* Oculta el contenido del menú por defecto, usado para colapsar menús en dispositivos móviles o tablets */
 }
+
+/* Menú visible cuando es expandido */
+.visible {
+    display: block;/* Hace que el contenido colapsado sea visible cuando se expande */
+}
+/* Ajuste del contenido principal cuando el menú está visible */
+main {
+    margin-left: 0;
+    transition: margin-left 0.3s ease;
+}
+/* Estilos para el botón primario */
+.btn-primary {
+    color: #fff;
+    background-color: #c1cfde;
+    border-color: #c0cad3;
+}
+
+/* Estilo para el enfoque de los botones y formularios */
+.btn:focus,
+.btn:active:focus,
+.btn-link.nav-link:focus,
+.form-control:focus,
+.form-check-input:focus {
+    box-shadow: none;
+}
+
+/* Estilo para los mensajes de validación */
+.valid.modified:not([type=checkbox]) {
+    outline: none;
+}
+
+.invalid {
+    outline: none;
+}
+
+.validation-message {
+    color: red;
+}
+
+/* Elimina cualquier borde o outline que pueda estar aplicándose al contenedor */
+.page * {
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+/* Asegúrate de que los encabezados no tengan borde ni outline */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+
 /* Estilo para el código */
 code {
-        color: #c02d76;/* Define un color específico para los fragmentos de código */
+    color: #c02d76;
 }
 
 
+/* Estilos para el botón primario */
+.btn-primary {
+    color: #fff;
+    background-color: #c1cfde;
+    border-color: #c0cad3;
+}
 
-/*------------------------------------------------ Media Queries-----------------------------------------------------*/
-/* Pantallas pequeñas (móviles) */
-@media (max-width: 768px) {
-    .navbar-center {
-        display: none;/* Ocultar el buscador en pantallas pequeñas */
-    }
-    .menu-icon {
-        font-size: 20px;/* Ajustar tamaño de iconos para pantallas pequeñas */
-    }
-    .navbar-right .icon {
-        font-size: 18px;/* Ajustar tamaño de los iconos a la derecha */
-    }
-    .sidebar {
-        width: 200px;/* Reducir tamaño del sidebar en pantallas pequeñas */
-    }
+/* Estilo para el enfoque de los botones y formularios */
+.btn:focus,
+.btn:active:focus,
+.btn-link.nav-link:focus,
+.form-control:focus,
+.form-check-input:focus {
+    box-shadow: none;
 }
-/* Pantallas medianas (tabletas) */
-@media (min-width: 769px) and (max-width: 1024px) {
-    .search-bar {
-        width: 200px;/* Ajustar el tamaño del buscador en tabletas */
-    }
+
+/* Estilo para los mensajes de validación */
+.valid.modified:not([type=checkbox]) {
+    outline: none;
 }
-/* Pantallas grandes (desktop) */
-@media (min-width: 1025px) {
-    .search-bar {
-        width: 300px;/* Aumentar el tamaño del buscador */
-    }
-    .menu-icon {
-        font-size: 24px;/* Asegurar que los iconos sean lo suficientemente grandes en escritorio */
-    }
-    .sidebar {
-        width: 250px;/* Sidebar más grande en pantallas grandes */
-    }
-    .search-bar {
-        max-width: 350px;/* Aumentar un poco el tamaño del buscador */
-    }
+
+.invalid {
+    outline: none;
 }
-/* Pantallas medianas y grandes */
-@media (min-width: 641px) {
-    .navbar-toggler {
-        display: none;/* Oculta el botón del menú en pantallas grandes */
-    }
-    .collapse {
-        display: block;/* Asegura que el menú siempre esté desplegado en pantallas grandes */
-    }
-    .nav-scrollable {
-        height: calc(100vh - 3.5rem);/* Hace que el menú ocupe el 100% de la altura de la pantalla, menos 3.5rem */
-        overflow-y: auto;/* Permite desplazamiento si el menú es muy alto */
-    }
+
+.validation-message {
+    color: red;
+}
+
+/* Elimina cualquier borde o outline que pueda estar aplicándose al contenedor */
+.page * {
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+/* Asegúrate de que los encabezados no tengan borde ni outline */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+
+/* Estilo para el código */
+code {
+    color: #c02d76;
 }
